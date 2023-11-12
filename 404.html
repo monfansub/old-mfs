@@ -101,48 +101,19 @@
 
 <body>
     <div id="root">
-        <h2>Thông báo về việc ngừng hỗ trợ web Mon Fansub phiên bản cũ!</h2>
+        <h2>Bảo trì Website Mon Fansub</h2>
         <div class="card">
-            <p>Phiên bản cũ của trang web Mon Fansub (old.monfansubvn.com) đã được gỡ bỏ kể từ ngày 12/03/2023. Bạn vui
-                lòng
-                chuyển hướng qua sử dụng phiên bản mới nhất</p>
-            <p><b>Lý do cho quyết định này:</b> Vì vấn đề bảo mật và trang web cũ đang sử dụng giao thức cũ nên không an
-                toàn,
-                chúng mình phải gỡ bỏ để giảm dung lượng cho hosting cũng như tăng trải nghiệm cho các bạn!</p>
+            <p>Website Mon Fansub hiện tại đang được bảo trì để sửa chữa, mong bạn thông cảm và quay lại sau!</p>
 
-            <a href="//www.monfansubvn.com">
-                <button>Về trang chính</button>
+            <a href="//www.facebook.com/DoraemonVietsubOfficial">
+                <button>Fanpage Mon Fansub</button>
             </a>
-            <p class="read-the-docs" style="font-size: 12px;">
-                Vui lòng đảm bảo trình duyệt của bạn được cập nhật lên phiên bản mới nhất để trải nghiệm một cách trọn
-                vẹn!
-                <br />
-                <b>Cụ thể:</b> Google Chrome phiên bản 87.x hoặc hơn. Microsoft Edge phiên bản 88.x hoặc hơn, FireFox
-                phiên bản 78.x hoặc hơn, Safari phiên bản 14 hoặc hơn
-            </p>
-            <p class="read-the-docs" style="font-size: 12px;" id="autoRedirect"></p>
             <p class="read-the-docs">
                 &copy; 2023 Mon Fansub
             </p>
 
         </div>
     </div>
-    <script>
-        window.onload = function () {
-            let seconds = 60;
-            const $ = document.getElementById('autoRedirect');
-            let interval = setInterval(function () {
-                if (seconds < 0) {
-                    $.innerHTML = "Đang chuyển hướng...";
-                    window.location.href = "https://www.monfansubvn.com";
-                    clearInterval(interval);
-                    return;
-                }
-                $.innerHTML = "Trang web sẽ tự động chuyển hướng bạn về trang web chính trong vòng " + seconds + " giây nữa...";
-                seconds--;
-            }, 1000);
-        }
-    </script>
 </body>
 
 </html>
